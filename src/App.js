@@ -1,14 +1,12 @@
 
 import './App.css';
-import C4 from './components/C4';
-// import Countthree from './components/Countthree';
-// import CounterTwo from './components/CounterTwo';
-// import HookCounter from './components/HookCounter';
+import EffectHook from './components/EffectHook';
+
 
 function App() {
   return (
     <div className="App">
-      <C4/>
+      <EffectHook/>
     </div>
   );
 }
