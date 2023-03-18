@@ -1,12 +1,13 @@
 
 import './App.css';
-import EffectHook from './components/EffectHook';
+import DataFetching from './DataFetching';
+
 
 
 function App() {
   return (
     <div className="App">
-      <EffectHook/>
+      <DataFetching/>
     </div>
   );
 }
