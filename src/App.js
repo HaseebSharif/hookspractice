@@ -1,23 +1,42 @@
 
-import React from 'react';
+import React,{useReducer} from 'react';
 import './App.css';
-import COmponentC from './COmponentC';
+import RA from './RA';
+import RB from './RB';
+import RC from './RC';
+import ReducerDatafetching2 from './ReducerDatafetching2';
+// import Reducerdatafetching from './Reducerdatafetching';
+
+// import COmponentC from './COmponentC';
 // import DataFetching from './DataFetching';
+// const initialState = 0
+// const reducer =(state,action)=>{
+//     switch(action)
+//     {
+//         case 'increment':
+//             return state +1;
+//         case 'decrement':
+//             return state -1;
+//         case 'reset':
+//             return initialState;
+//             default:
+//                 return state
+//     }
+    
 
+// }
 
-export const userContext = React.createContext()
-export const channelContext = React.createContext()
+// export const CountContext = React.createContext()
+
 function App() {
+  // const [count,dispatch ]= useReducer(reducer,initialState)
   return (
+    // <CountContext.Provider value={{countState:count, countDispatch:dispatch}}>
     <div className="App">
-      <userContext.Provider value={'Haseeb'}>
-        <channelContext.Provider value={'Sharif'}>
-        <COmponentC/>
-        </channelContext.Provider>
-      
-      </userContext.Provider>
-      
+      {/* <h2>Count-{count}</h2> */}
+      <ReducerDatafetching2/>
     </div>
+    // </CountContext.Provider>
   );
 }
 
